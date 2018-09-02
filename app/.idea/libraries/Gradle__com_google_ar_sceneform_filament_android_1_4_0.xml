@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.ar.sceneform:filament-android-1.4.0">
+    <CLASSES>
+      <root url="jar://C:/Android/caches/transforms-1/files-1.1/jetified-filament-android-1.4.0.aar/1b2d709ac1a76b0150c0f450a6b13a80/jars/classes.jar!/" />
+      <root url="file://C:/Android/caches/transforms-1/files-1.1/jetified-filament-android-1.4.0.aar/1b2d709ac1a76b0150c0f450a6b13a80/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

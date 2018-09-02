@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: petrov.kristiyan:colorpicker-library-1.1.8">
+    <CLASSES>
+      <root url="jar://C:/Android/caches/transforms-1/files-1.1/jetified-colorpicker-library-1.1.8.aar/e290f0a6e04eabcd4df61ad4ab1ffcf0/jars/classes.jar!/" />
+      <root url="file://C:/Android/caches/transforms-1/files-1.1/jetified-colorpicker-library-1.1.8.aar/e290f0a6e04eabcd4df61ad4ab1ffcf0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Android/caches/modules-2/files-2.1/petrov.kristiyan/colorpicker-library/1.1.8/63bb16a37853294ba7c486ad05b39dd969b5cf54/colorpicker-library-1.1.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

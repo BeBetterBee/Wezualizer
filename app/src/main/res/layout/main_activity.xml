@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_plot_title"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_plot_data"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edt_values"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:hint="@string/txt_plot_data_hint"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:id="@+id/btn_set_color"
+        android:layout_width="wrap_content"
+        android:text="@string/btn_start_color_pick"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_start_ar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="@string/btn_start_ar"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</layout>

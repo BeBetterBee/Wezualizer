@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.fragment:fragment-1.0.0-beta01">
+    <CLASSES>
+      <root url="file://C:/Android/caches/transforms-1/files-1.1/fragment-1.0.0-beta01.aar/6c8c3ec398a240911ca436760fc083b0/res" />
+      <root url="jar://C:/Android/caches/transforms-1/files-1.1/fragment-1.0.0-beta01.aar/6c8c3ec398a240911ca436760fc083b0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Android/caches/modules-2/files-2.1/androidx.fragment/fragment/1.0.0-beta01/2683284cd9df3d27dcf8accfc76183d437c6310c/fragment-1.0.0-beta01-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

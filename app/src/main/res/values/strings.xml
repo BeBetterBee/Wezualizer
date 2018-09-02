@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Wezualizer</string>
+    <string name="title_activity_ar">ArActivity</string>
+
+    <string name="btn_start_ar">Show plot</string>
+    <string name="btn_start_color_pick">Bar graph</string>
+    <string name="txt_plot_title">Title</string>
+    <string name="txt_plot_title_hint">Insert title of plot</string>
+    <string name="txt_plot_data">Insert data</string>
+    <string name="txt_plot_data_hint">Insert data and click on enter after each value</string>
+</resources>
