@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -53,5 +55,8 @@ dependencies {
 
     //color picker
     implementation 'petrov.kristiyan:colorpicker-library:1.1.8'
+
+    //databinding
+    kapt 'com.android.databinding:compiler:3.1.4'
 
 }

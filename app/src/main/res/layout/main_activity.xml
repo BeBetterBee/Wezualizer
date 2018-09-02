@@ -1,53 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+
     <data>
 
+        <import type="hccn.adastragrp.com.wezualizer.R"/>
+
+        <import type="androidx.core.content.ContextCompat"/>
+
+        <variable
+            name="vm"
+            type="hccn.adastragrp.com.wezualizer.ui.main.MainViewModel"/>
+
     </data>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_plot_title"
-        android:textStyle="bold"/>
-    <EditText
-        android:id="@+id/edt_title"
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_margin="20dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_plot_data"
-        android:textStyle="bold"/>
-    <EditText
-        android:id="@+id/edt_values"
-        android:layout_width="match_parent"
-        android:layout_margin="20dp"
-        android:hint="@string/txt_plot_data_hint"
-        android:layout_height="200dp"/>
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_plot_title"
+            android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/btn_set_color"
-        android:layout_width="wrap_content"
-        android:text="@string/btn_start_color_pick"
-        android:layout_marginBottom="30dp"
-        android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@={vm.graphTitle}"/>
 
-    <Button
-        android:id="@+id/btn_start_ar"
-        android:layout_width="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:text="@string/btn_start_ar"
-        android:layout_marginBottom="30dp"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        <!-- DATA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_plot_data"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edt_values"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:hint="@string/txt_plot_data_hint"
+                android:text="@={vm.graphValues}"/>
+        </LinearLayout>
+
+        <!-- COLOR PICKERS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <!-- BAR -->
+            <Button
+                android:id="@+id/btn_set_color_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:text="@string/btn_start_color_pick"/>
+
+            <!-- VALUES -->
+            <Button
+                android:id="@+id/btn_set_color_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:text="@string/btn_start_color_title"/>
+        </LinearLayout>
+
+        <!-- BTN START PLOT-->
+        <Button
+            android:id="@+id/btn_start_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="30dp"
+            android:text="@string/btn_start_ar"/>
+    </LinearLayout>
 </layout>
