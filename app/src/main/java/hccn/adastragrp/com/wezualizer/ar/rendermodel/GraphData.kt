@@ -7,4 +7,4 @@ import kotlinx.android.parcel.Parcelize
 import kotlinx.android.parcel.RawValue
 
 @Parcelize
-class GraphData(val array: ArrayList<ParcelableVector3>, val barColor: Int, val graphTitle: String) : Parcelable
+class GraphData(val array: ArrayList<ParcelableVector3>, val barColor: Int,val titleColor:Int, val graphTitle: String) : Parcelable

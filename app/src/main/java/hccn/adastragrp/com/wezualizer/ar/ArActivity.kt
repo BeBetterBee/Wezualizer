@@ -3,6 +3,8 @@ package hccn.adastragrp.com.wezualizer.ar
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
 import com.google.ar.core.Anchor
 import com.google.ar.core.HitResult
 import com.google.ar.sceneform.AnchorNode
@@ -13,8 +15,10 @@ import com.google.ar.sceneform.rendering.ShapeFactory
 import com.google.ar.sceneform.rendering.ViewRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
+import hccn.adastragrp.com.wezualizer.BR
 import hccn.adastragrp.com.wezualizer.R
 import hccn.adastragrp.com.wezualizer.ar.rendermodel.GraphData
+import hccn.adastragrp.com.wezualizer.databinding.ActivityArBinding
 
 
 class ArActivity : AppCompatActivity() {
@@ -22,6 +26,9 @@ class ArActivity : AppCompatActivity() {
         const val KEY_AR_GRAPH_DATA = "AR_DATA"
         const val KEY_AR_MAP_DATA = "AR_DATA"
     }
+
+    private lateinit var viewModel: ArVM
+    private lateinit var binding: ActivityArBinding
 
     lateinit var fragment: ArFragment
     lateinit var anchorNode: AnchorNode
@@ -32,8 +39,6 @@ class ArActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ar)
-        supportActionBar?.hide()
-
         fragment = supportFragmentManager
                 .findFragmentById(R.id.sceneform_fragment)
                 as ArFragment
@@ -60,6 +65,7 @@ class ArActivity : AppCompatActivity() {
                 .thenAccept { renderableResult ->
                     val textView = renderableResult.view as TextView
                     textView.text = graphData.graphTitle
+                    textView.setBackgroundColor(graphData.titleColor)
                     showNode(hitResult.createAnchor(), TransformableNode(fragment.transformationSystem).apply {
                         renderable = renderableResult
                         localPosition = Vector3(-0.5f, 0.7f, 0f)

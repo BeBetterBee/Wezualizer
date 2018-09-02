@@ -52,9 +52,11 @@ class MainActivity : AppCompatActivity() {
         colorPicker.show()
         colorPicker.setOnChooseColorListener(object : ColorPicker.OnChooseColorListener {
             override fun onChooseColor(position: Int, color: Int) {
-                viewModel.colorGraphBar.value = color
                 button.setBackgroundColor(color)
-                colorGraphBar = color
+                when(button.id){
+                    R.id.btn_set_color_title -> colorGraphTitle = color
+                    R.id.btn_set_color_bar -> colorGraphBar = color
+                }
             }
 
             override fun onCancel() {
@@ -73,7 +75,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val graphData = GraphData(array, colorGraphBar, viewModel.graphTitle.value!!)
+        val graphData = GraphData(array, colorGraphBar,colorGraphTitle, viewModel.graphTitle.value!!)
 
         val intent = Intent(this, ArActivity::class.java)
         intent.putExtra(KEY_AR_GRAPH_DATA, graphData)
