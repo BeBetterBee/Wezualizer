@@ -3,13 +3,13 @@
 
     <data>
 
-        <import type="hccn.adastragrp.com.wezualizer.R"/>
+        <import type="beebetterbee.com.wezualizer.R"/>
 
         <import type="androidx.core.content.ContextCompat"/>
 
         <variable
             name="vm"
-            type="hccn.adastragrp.com.wezualizer.ui.main.MainViewModel"/>
+            type="beebetterbee.com.wezualizer.ui.main.MainViewModel"/>
 
     </data>
 

@@ -7,7 +7,7 @@
     <data>
         <variable
             name="vm"
-            type="hccn.adastragrp.com.wezualizer.ar.ArVM"/>
+            type="beebetterbee.com.wezualizer.ar.ArVM"/>
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

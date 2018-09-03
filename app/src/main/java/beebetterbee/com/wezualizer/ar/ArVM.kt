@@ -1,4 +1,4 @@
-package hccn.adastragrp.com.wezualizer.ar
+package beebetterbee.com.wezualizer.ar
 
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.ViewModel

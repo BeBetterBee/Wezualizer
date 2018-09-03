@@ -1,4 +1,4 @@
-package hccn.adastragrp.com.wezualizer.ar
+package beebetterbee.com.wezualizer.ar
 
 import android.os.Bundle
 import android.widget.TextView
@@ -15,10 +15,10 @@ import com.google.ar.sceneform.rendering.ShapeFactory
 import com.google.ar.sceneform.rendering.ViewRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
-import hccn.adastragrp.com.wezualizer.BR
-import hccn.adastragrp.com.wezualizer.R
-import hccn.adastragrp.com.wezualizer.ar.rendermodel.GraphData
-import hccn.adastragrp.com.wezualizer.databinding.ActivityArBinding
+import beebetterbee.com.wezualizer.BR
+import beebetterbee.com.wezualizer.R
+import beebetterbee.com.wezualizer.ar.rendermodel.GraphData
+import beebetterbee.com.wezualizer.databinding.ActivityArBinding
 
 
 class ArActivity : AppCompatActivity() {

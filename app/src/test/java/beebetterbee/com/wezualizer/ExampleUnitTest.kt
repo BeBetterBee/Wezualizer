@@ -1,4 +1,4 @@
-package hccn.adastragrp.com.wezualizer
+package beebetterbee.com.wezualizer
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package hccn.adastragrp.com.wezualizer
+package beebetterbee.com.wezualizer
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,12 +7,16 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
-import hccn.adastragrp.com.wezualizer.ar.ArActivity
-import hccn.adastragrp.com.wezualizer.ar.ArActivity.Companion.KEY_AR_GRAPH_DATA
-import hccn.adastragrp.com.wezualizer.ar.rendermodel.GraphData
-import hccn.adastragrp.com.wezualizer.ar.rendermodel.ParcelableVector3
-import hccn.adastragrp.com.wezualizer.databinding.MainActivityBinding
-import hccn.adastragrp.com.wezualizer.ui.main.MainViewModel
+import androidx.recyclerview.R.attr.layoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import beebetterbee.com.wezualizer.ar.ArActivity
+import beebetterbee.com.wezualizer.ar.ArActivity.Companion.KEY_AR_GRAPH_DATA
+import beebetterbee.com.wezualizer.ar.rendermodel.GraphData
+import beebetterbee.com.wezualizer.ar.rendermodel.ParcelableVector3
+import beebetterbee.com.wezualizer.base.adapter.MyAdapter
+import beebetterbee.com.wezualizer.databinding.MainActivityBinding
+import beebetterbee.com.wezualizer.ui.main.MainViewModel
 import petrov.kristiyan.colorpicker.ColorPicker
 
 
@@ -31,7 +35,6 @@ class MainActivity : AppCompatActivity() {
         lifecycle.addObserver(viewModel)
         binding.setVariable(BR.vm, viewModel)
         binding.executePendingBindings()
-
 
         colorGraphBar = getColor(R.color.pink)
         colorGraphTitle = getColor(R.color.primary_dark_material_light)

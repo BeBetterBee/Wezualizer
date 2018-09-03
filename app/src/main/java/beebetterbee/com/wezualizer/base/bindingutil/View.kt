@@ -1,4 +1,4 @@
-package hccn.adastragrp.com.wezualizer.base.bindingutil
+package beebetterbee.com.wezualizer.base.bindingutil
 
 import android.view.View
 import androidx.databinding.BindingAdapter

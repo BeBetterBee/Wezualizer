@@ -1,4 +1,4 @@
-package hccn.adastragrp.com.wezualizer.ar.rendermodel
+package beebetterbee.com.wezualizer.ar.rendermodel
 
 
 import android.os.Parcelable

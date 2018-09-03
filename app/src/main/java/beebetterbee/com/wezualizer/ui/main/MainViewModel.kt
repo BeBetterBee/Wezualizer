@@ -1,10 +1,10 @@
-package hccn.adastragrp.com.wezualizer.ui.main
+package beebetterbee.com.wezualizer.ui.main
 
 import androidx.core.content.ContextCompat.getColor
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import hccn.adastragrp.com.wezualizer.R
+import beebetterbee.com.wezualizer.R
 
 class MainViewModel : ViewModel(), LifecycleObserver {
     val graphTitle = MutableLiveData<String>()
